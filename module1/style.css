@@ -1,0 +1,68 @@
+:root {
+  --dark: #212353;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #4b5d68;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1117px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  align-items: center;
+}
+.header__menu {
+  margin-left: 120px;
+}
+.menu__list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.menu__item:not(:last-child) {
+  margin-right: 10px;
+}
+.menu__item--current a {
+  color: var(--dark);
+  font-weight: 700;
+}
+.menu__link {
+  color: #4b5d68;
+  font-size: 16px;
+  padding: 15px;
+}
+.promo {
+  position: relative;
+}
+.promo__image {
+  width: 885px;
+  height: 468px;
+  background-image: url(images/promo-bg.jpg);
+  background-size: cover;
+  position: absolute;
+  right: -210px;
+  bottom: -210px;
+  z-index: -1;
+}
+.promo__content {
+  max-width: 645px;
+  margin-top: 140px;
+}
+.promo__title {
+  margin: 0;
+  font-size: 80px;
+  color: var(--dark);
+  line-height: 88px;
+}
+.promo__text {
+    max-width: 380px;
+    font-size: 18px;
+    line-height: 28px;
+}
